@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <form method="POST">
+            {% csrf_token %}
+            <div class="form-group">
+              <label for="">Name</label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="John Johnes">
+            </div>
+
+            <div class="form-group">
+              <label for="">Email</label>
+              <input type="text" class="form-control" id="email" name="email" placeholder="john.johnes@gmail.com">
+            </div>
+
+            <div class="form-group">
+              <label for="">Phone</label>
+              <input type="text" class="form-control" id="phone" name="phone" placeholder="123456789">
+            </div>
+
+            <div class="form-group">
+              <label for="">About You</label>
+              <textarea type="text" class="form-control" id="summary" name="summary" placeholder="About You"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="">Degree</label>
+              <input type="text" class="form-control" id="degree" name="degree" placeholder="Your degree">
+            </div>
+
+            <div class="form-group">
+              <label for="">School</label>
+              <input type="text" class="form-control" id="school" name="school" placeholder="Schools that You have attended">
+            </div>
+
+            <div class="form-group">
+              <label for="">University</label>
+              <input type="text" class="form-control" id="university" name="university" placeholder="Universitis that You have attended">
+            </div>
+
+            <div class="form-group">
+              <label for="">Previous Jobs</label>
+              <textarea type="text" class="form-control" id="previous_work" name="previous_work" placeholder="Your previous jobs"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="">Skills</label>
+              <textarea type="text" class="form-control" id="skills" name="skills" placeholder="Your skills"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

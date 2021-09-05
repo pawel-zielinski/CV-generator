@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row m-5">
+        <div class="col-md-12">
+          <center><h2>CV Database Profile List</h2></center>
+        </div>
+      </div>
+      {% for each in resume %}
+        <div class="row">
+          <div class="col-md-12">
+            {{each.name}}
+            <a href="{% url 'pdf:resume' id=each.id %}" style="float: right;" class="btn btn-primary">Download</a>
+          </div>
+        </div>
+        <hr>
+      {% endfor %}
+    </div>
+  </body>
+</html>

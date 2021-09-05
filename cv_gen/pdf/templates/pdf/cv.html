@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title></title>
+  </head>
+  <body>
+    <h2><b>{{user_profile.name}}</b></h2>
+    <h2><b>{{user_profile.email}}</b></h2>
+    <h2><b>{{user_profile.phone}}</b></h2>
+    <hr>
+    <br>
+    <p>Summary</p>
+    <p>{{user_profile.summary}}</p>
+    <hr>
+    <p>Skills</p>
+    <p>{{user_profile.skills}}</p>
+    <hr>
+    <p>Education</p>
+    <ul>
+      <li>Schooling: {{user_profile.school}}</li>
+      <li>{{user_profile.degree}} from {{user_profile.university}}</li>
+    </ul>
+    <hr>
+    <p>Previous Jobs</p>
+    <p>{{user_profile.previous_work}}</p>
+  </body>
+</html>
